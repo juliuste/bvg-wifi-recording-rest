@@ -12,14 +12,12 @@
 		"test": "npm run lint && npm run check-deps"
 	},
 	"dependencies": {
+		"body-parser": "^1.19.0",
 		"compression": "^1.7.2",
-		"config": "^1.30.0",
 		"corser": "^2.0.1",
 		"express": "^4.16.3",
-		"meinfernbus": "^3.0.0",
-		"moment-timezone": "^0.5.21",
-		"nocache": "^2.0.0",
-		"search-meinfernbus-locations": "^2.9.0"
+		"lodash": "^4.17.11",
+		"pify": "^4.0.1"
 	},
 	"devDependencies": {
 		"depcheck": "^0.8.0",
