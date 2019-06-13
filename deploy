@@ -1,0 +1,13 @@
+#!/bin/sh
+
+rsync -rav --delete \
+	--exclude '.*' \
+	--exclude node_modules \
+	. 'europa:~/bvg-wifi-recording-rest/'
+
+ssh europa "\
+cd ~/bvg-wifi-recording-rest
+npm i
+npm update
+forever-service delete bvg-wifi-recording-rest
+forever-service install bvg-wifi-recording-rest -e 'PORT=3058' --start -s index.js"

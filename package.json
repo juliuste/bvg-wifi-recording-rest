@@ -1,0 +1,36 @@
+{
+	"name": "bvg-wifi-recording-rest",
+	"private": true,
+	"version": "0.0.0",
+	"license": "ISC",
+	"author": "Julius Tens <mail@juliustens.eu>",
+	"scripts": {
+		"check-deps": "depcheck",
+		"fix": "eslint --fix index.js",
+		"lint": "eslint index.js",
+		"prepublishOnly": "npm test",
+		"test": "npm run lint && npm run check-deps"
+	},
+	"dependencies": {
+		"compression": "^1.7.2",
+		"config": "^1.30.0",
+		"corser": "^2.0.1",
+		"express": "^4.16.3",
+		"meinfernbus": "^3.0.0",
+		"moment-timezone": "^0.5.21",
+		"nocache": "^2.0.0",
+		"search-meinfernbus-locations": "^2.9.0"
+	},
+	"devDependencies": {
+		"depcheck": "^0.8.0",
+		"eslint": "^5.16.0",
+		"eslint-config-standard": "^12.0.0",
+		"eslint-plugin-import": "^2.17.2",
+		"eslint-plugin-node": "^9.0.1",
+		"eslint-plugin-promise": "^4.1.1",
+		"eslint-plugin-standard": "^4.0.0"
+	},
+	"engines": {
+		"node": ">=10"
+	}
+}
